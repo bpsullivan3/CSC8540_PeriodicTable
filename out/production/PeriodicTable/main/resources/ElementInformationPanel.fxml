@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="element_information_panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <content>
+      <Pane prefHeight="279.0" prefWidth="331.0">
+         <children>
+            <Label layoutX="12.0" layoutY="15.0" text="Element Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="45.0" text="Atomic Number:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="75.0" text="Melting Point:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="104.0" text="Boiling Point:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_field_element_name" editable="false" layoutX="123.0" layoutY="9.0" prefHeight="21.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="text_field_atomic_number" editable="false" layoutX="123.0" layoutY="39.0" prefHeight="21.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="text_field_boiling_point" editable="false" layoutX="123.0" layoutY="99.0" prefHeight="21.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="text_field_melting_point" editable="false" layoutX="123.0" layoutY="69.0" prefHeight="21.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
