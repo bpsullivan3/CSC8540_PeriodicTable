@@ -20,7 +20,8 @@ public class Main extends Application
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
+
+}
 
 
     public static void main(String[] args)
@@ -28,8 +29,4 @@ public class Main extends Application
         launch(args);
     }
 
-    public void exitProgram()
-    {
-        System.exit(0);
-    }
 }
