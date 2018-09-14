@@ -31,6 +31,6 @@ User interface TODOs
   6) Add the filter options under the filters tab.
   
 ~~7) Changing the size of the panel does not adjust the size of the components within the panel - this should be fixed.~~
-  Fixed by changing from a regular pane to a gridpane 
+  Fixed by changing from a regular pane to a gridpane. This should be done to the element information popup pane as well.
     
   8) Images for each of the element buttons need to be created. They should have all parts of the layout of the periodic table and should also look nice as it is the main thing users will be looking at when opening the program.
