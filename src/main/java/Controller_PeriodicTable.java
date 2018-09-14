@@ -277,14 +277,7 @@ public class Controller_PeriodicTable implements ButtonActions
     {
         createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H and atomic number 1", "images/hydrogen_placeholder_description_image.png");
         //TODO Use the get functions from the not yet created Element class to set all of the fields
-
-        //Pass element to a function which will get all of the information to display.
-        // I.e. getElementInformation(hydrogen)
-        //getElementInformation will set the text of all the text fields and set the images. It will also run
-        // createInformationScreen()
-        //Each element's action should just have getElementInformation(nameOfElement) to keep things less cluttered
-        // than they have to be
-
+        
     }
 
     @Override
