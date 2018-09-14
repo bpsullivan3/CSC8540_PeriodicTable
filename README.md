@@ -12,13 +12,13 @@ CLASS Controller_ElementInformationPanel
 CLASS Controller_PeriodicTable
   This class is the controller for the periodic table main user interface. This defines all of the components of the user interface, which is quite lengthy because each element has a button. From here, clicking on a button should call on the createInformationScreen method, which as it is designed currently, will accept all of the pieces of information about the elements as paramaters and then create a popup screen with the Controller_ElementInformationPanel class.
   
-main.resources.images
+RESOURCES main.resources.images
   All images used in the program will be stored here. Currently there are placeholder images, which I assume will be replaced at some point.
   
-ElementInformationPanel.fxml
+FXML ElementInformationPanel.fxml
   This is the FXML that defines the user interface for the popup element information panel.
  
-PeriodicTableOfElements.fxml
+FXML PeriodicTableOfElements.fxml
   This is the FXML that defines the user interface for the periodic table of elements panel.
   
 
