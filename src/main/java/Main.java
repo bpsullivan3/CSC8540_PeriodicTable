@@ -5,6 +5,7 @@
 package main.java;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,6 +22,8 @@ public class Main extends Application
         primaryStage.setScene(scene);
         primaryStage.show();
 
+
+
 }
 
 
@@ -28,5 +31,8 @@ public class Main extends Application
     {
         launch(args);
     }
+
+
+
 
 }

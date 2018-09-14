@@ -49,301 +49,9 @@
             <Insets bottom="2.0" />
          </padding>
       </MenuBar>
-      <Pane layoutX="22.0" layoutY="37.0" prefHeight="909.0" prefWidth="1279.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
+      <Pane fx:id="pane" layoutX="22.0" layoutY="37.0" prefHeight="909.0" prefWidth="1279.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
          <children>
-            <Label alignment="TOP_CENTER" layoutX="257.0" layoutY="69.0" prefHeight="90.0" prefWidth="344.0" text="Periodic Table of Elements">
-               <font>
-                  <Font name="Gloucester MT Extra Condensed" size="44.0" />
-               </font>
-            </Label>
-            <ImageView fx:id="button_hydrogen" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" onMouseClicked="#hydrogen_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/hydrogen_placeholder_image.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport></ImageView>
-            <ImageView fx:id="button_lithium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="70.0" onMouseClicked="#lithium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_sodium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="139.0" onMouseClicked="#sodium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_potassium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="209.0" onMouseClicked="#potassium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_rubidium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="279.0" onMouseClicked="#rubidium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_caesium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="349.0" onMouseClicked="#caesium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_francium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="419.0" onMouseClicked="#francium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_radium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="419.0" onMouseClicked="#radium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
             <ImageView fx:id="button_barium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="355.0" onMouseClicked="#barium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_strontium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="279.0" onMouseClicked="#strontium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_calcium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="209.0" onMouseClicked="#calcium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_magnesium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="139.0" onMouseClicked="#magnesium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_beryllium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="70.0" onMouseClicked="#beryllium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_scandium" fitHeight="70.0" fitWidth="60.0" layoutX="138.0" layoutY="209.0" onMouseClicked="#scandium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_yttrium" fitHeight="70.0" fitWidth="60.0" layoutX="138.0" layoutY="279.0" onMouseClicked="#yttrium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_rutherfordium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="419.0" onMouseClicked="#rutherfordium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_hafnium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="349.0" onMouseClicked="#hafnium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_zirconium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="279.0" onMouseClicked="#zirconium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_titanium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="209.0" onMouseClicked="#titanium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_dubnium" fitHeight="70.0" fitWidth="60.0" layoutX="255.0" layoutY="419.0" onMouseClicked="#dubnium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_tantalum" fitHeight="70.0" fitWidth="60.0" layoutX="255.0" layoutY="349.0" onMouseClicked="#tantalum_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_niobium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="279.0" onMouseClicked="#niobium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_vandium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="209.0" onMouseClicked="#vanadium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_seaborgium" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="419.0" onMouseClicked="#seaborgium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_tungsten" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#tungsten_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_molybdenum" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="279.0" onMouseClicked="#molybdenum_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_chromium" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="209.0" onMouseClicked="#chromium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_bohrium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="419.0" onMouseClicked="#bohrium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_rhenium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="349.0" onMouseClicked="#rhenium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_technetium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="279.0" onMouseClicked="#technetium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_manganese" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="209.0" onMouseClicked="#manganese_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_iron" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="209.0" onMouseClicked="#iron_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_ruthenium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="279.0" onMouseClicked="#ruthenium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_osmium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="349.0" onMouseClicked="#osmium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_hassium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="419.0" onMouseClicked="#hassium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_cobalt" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="209.0" onMouseClicked="#cobalt_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_rhodium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="279.0" onMouseClicked="#rhodium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -359,7 +67,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_meitnerium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="419.0" onMouseClicked="#meitnerium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_calcium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="209.0" onMouseClicked="#calcium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -367,7 +75,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_nickel" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="209.0" onMouseClicked="#nickel_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_cerium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="538.0" onMouseClicked="#cerium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -375,7 +83,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_palladium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="279.0" onMouseClicked="#palladium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_nobelium" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="608.0" onMouseClicked="#nobelium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -383,7 +91,255 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_platinum" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="349.0" onMouseClicked="#platinum_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_californium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="608.0" onMouseClicked="#californium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_cobalt" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="209.0" onMouseClicked="#cobalt_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_antimony" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="279.0" onMouseClicked="#antimony_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_oxygen" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="70.0" onMouseClicked="#oxygen_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_thorium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="608.0" onMouseClicked="#thorium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_samarium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="538.0" onMouseClicked="#samarium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_livermorium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="419.0" onMouseClicked="#livermorium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_krypton" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="209.0" onMouseClicked="#krypton_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_titanium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="209.0" onMouseClicked="#titanium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_bohrium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="419.0" onMouseClicked="#bohrium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_lanthanum" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="538.0" onMouseClicked="#lanthanum_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_terbium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="538.0" onMouseClicked="#terbium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_nihonium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="419.0" onMouseClicked="#nihonium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_gold" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="349.0" onMouseClicked="#gold_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_argon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="139.0" onMouseClicked="#argon_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_gadolinium" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="538.0" onMouseClicked="#gadolinium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_hassium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="419.0" onMouseClicked="#hassium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_iron" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="209.0" onMouseClicked="#iron_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_zinc" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="209.0" onMouseClicked="#zinc_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_germanium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="209.0" onMouseClicked="#germanium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_silver" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="279.0" onMouseClicked="#silver_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_lawrencium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="608.0" onMouseClicked="#lawrencium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_tennessine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="419.0" onMouseClicked="#tennessine_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_rhenium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="349.0" onMouseClicked="#rhenium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_cadmium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="279.0" onMouseClicked="#cadmium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_rhodium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="279.0" onMouseClicked="#rhodium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_helium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" onMouseClicked="#helium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_dubnium" fitHeight="70.0" fitWidth="60.0" layoutX="255.0" layoutY="419.0" onMouseClicked="#dubnium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_niobium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="279.0" onMouseClicked="#niobium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_gallium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="209.0" onMouseClicked="#gallium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_lithium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="70.0" onMouseClicked="#lithium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_molybdenum" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="279.0" onMouseClicked="#molybdenum_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -407,111 +363,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_silver" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="279.0" onMouseClicked="#silver_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_gold" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="349.0" onMouseClicked="#gold_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_roentgenium" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="419.0" onMouseClicked="#roentgenium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_zinc" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="209.0" onMouseClicked="#zinc_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_cadmium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="279.0" onMouseClicked="#cadmium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
             <ImageView fx:id="button_mercury" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="349.0" onMouseClicked="#mercury_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_copernicium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="419.0" onMouseClicked="#copernicium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_boron" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="70.0" onMouseClicked="#boron_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_aluminium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="139.0" onMouseClicked="#aluminium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_gallium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="209.0" onMouseClicked="#gallium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_indium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="279.0" onMouseClicked="#indium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_thallium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="349.0" onMouseClicked="#thallium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_nihonium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="419.0" onMouseClicked="#nihonium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_carbon" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="70.0" onMouseClicked="#carbon_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -527,143 +379,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_germanium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="209.0" onMouseClicked="#germanium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_tin" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="279.0" onMouseClicked="#tin_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_lead" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="349.0" onMouseClicked="#lead_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_flerovium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="419.0" onMouseClicked="#flerovium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_nitrogen" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="70.0" onMouseClicked="#nitrogen_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_phosphorus" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="139.0" onMouseClicked="#phosphorus_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_arsenic" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="209.0" onMouseClicked="#arsenic_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_antimony" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="279.0" onMouseClicked="#antimony_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_bismuth" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="349.0" onMouseClicked="#bismuth_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_moscovium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="419.0" onMouseClicked="#moscovium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_oxygen" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="70.0" onMouseClicked="#oxygen_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_sulfur" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="139.0" onMouseClicked="#sulfur_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_selenium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="209.0" onMouseClicked="#selenium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_tellurium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="279.0" onMouseClicked="#tellurium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_polonium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="349.0" onMouseClicked="#polonium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_livermorium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="419.0" onMouseClicked="#livermorium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_tennessine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="419.0" onMouseClicked="#tennessine_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_astatine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="349.0" onMouseClicked="#astatine_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_potassium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="209.0" onMouseClicked="#potassium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -679,7 +395,12 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_bromine" fitHeight="70.0" fitWidth="60.0" layoutX="940.0" layoutY="209.0" onMouseClicked="#bromine_action" pickOnBounds="true" preserveRatio="true">
+            <Label alignment="TOP_CENTER" layoutX="257.0" layoutY="69.0" prefHeight="90.0" prefWidth="344.0" text="Periodic Table of Elements">
+               <font>
+                  <Font name="Gloucester MT Extra Condensed" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="button_astatine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="349.0" onMouseClicked="#astatine_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -687,7 +408,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_chlorine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="139.0" onMouseClicked="#chlorine_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_nitrogen" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="70.0" onMouseClicked="#nitrogen_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -695,7 +416,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_fluorine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="70.0" onMouseClicked="#fluorine_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_osmium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="349.0" onMouseClicked="#osmium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -703,103 +424,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_oganesson" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="419.0" onMouseClicked="#oganesson_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_radon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="349.0" onMouseClicked="#radon_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_xenon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="279.0" onMouseClicked="#xenon_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_krypton" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="209.0" onMouseClicked="#krypton_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_argon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="139.0" onMouseClicked="#argon_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_neon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="70.0" onMouseClicked="#neon_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_helium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" onMouseClicked="#helium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_ytterbium" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="538.0" onMouseClicked="#ytterbium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_nobelium" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="608.0" onMouseClicked="#nobelium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_mendelevium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="608.0" onMouseClicked="#mendelevium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_thulium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="538.0" onMouseClicked="#thulium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_fermium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="608.0" onMouseClicked="#fermium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_erbium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="538.0" onMouseClicked="#erbium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_palladium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="279.0" onMouseClicked="#palladium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -815,46 +440,6 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_holmium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="538.0" onMouseClicked="#holmium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_californium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="608.0" onMouseClicked="#californium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_dysprosium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="538.0" onMouseClicked="#dysprosium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_berkelium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="608.0" onMouseClicked="#berkelium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_terbium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="538.0" onMouseClicked="#terbium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
             <ImageView fx:id="button_curium" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="608.0" onMouseClicked="#curium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
@@ -863,7 +448,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_gadolinium" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="538.0" onMouseClicked="#gadolinium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_fluorine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="70.0" onMouseClicked="#fluorine_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -871,7 +456,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_americium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="608.0" onMouseClicked="#americium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_fermium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="608.0" onMouseClicked="#fermium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -879,7 +464,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_europium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="538.0" onMouseClicked="#europium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_manganese" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="209.0" onMouseClicked="#manganese_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -887,7 +472,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_plutonium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="608.0" onMouseClicked="#plutonium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_strontium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="279.0" onMouseClicked="#strontium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -895,23 +480,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_samarium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="538.0" onMouseClicked="#samarium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_neptunium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="608.0" onMouseClicked="#neptunium_action" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="images/placeholder_element.png" />
-               </image>
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-            </ImageView>
-            <ImageView fx:id="button_promethium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="538.0" onMouseClicked="#promethium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_caesium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="349.0" onMouseClicked="#caesium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -927,7 +496,103 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_uranium" fitHeight="70.0" fitWidth="60.0" layoutX="366.0" layoutY="608.0" onMouseClicked="#uranium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_protactinium" fitHeight="70.0" fitWidth="60.0" layoutX="310.0" layoutY="608.0" onMouseClicked="#protactinium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_bromine" fitHeight="70.0" fitWidth="60.0" layoutX="940.0" layoutY="209.0" onMouseClicked="#bromine_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_rutherfordium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="419.0" onMouseClicked="#rutherfordium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_polonium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="349.0" onMouseClicked="#polonium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_xenon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="279.0" onMouseClicked="#xenon_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_tellurium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="279.0" onMouseClicked="#tellurium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_phosphorus" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="139.0" onMouseClicked="#phosphorus_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_technetium" fitHeight="70.0" fitWidth="60.0" layoutX="369.0" layoutY="279.0" onMouseClicked="#technetium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_arsenic" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="209.0" onMouseClicked="#arsenic_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_europium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="538.0" onMouseClicked="#europium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_ruthenium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="279.0" onMouseClicked="#ruthenium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_beryllium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="70.0" onMouseClicked="#beryllium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_moscovium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="419.0" onMouseClicked="#moscovium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -943,7 +608,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_protactinium" fitHeight="70.0" fitWidth="60.0" layoutX="310.0" layoutY="608.0" onMouseClicked="#protactinium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_chromium" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="209.0" onMouseClicked="#chromium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -951,7 +616,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_cerium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="538.0" onMouseClicked="#cerium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_berkelium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="608.0" onMouseClicked="#berkelium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -959,7 +624,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_thorium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="608.0" onMouseClicked="#thorium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_yttrium" fitHeight="70.0" fitWidth="60.0" layoutX="138.0" layoutY="279.0" onMouseClicked="#yttrium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -967,7 +632,286 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lanthanum" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="538.0" onMouseClicked="#lanthanum_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_neptunium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="608.0" onMouseClicked="#neptunium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_dysprosium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="538.0" onMouseClicked="#dysprosium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_hydrogen" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" onMouseClicked="#hydrogen_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/hydrogen_placeholder_image.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+            <ImageView fx:id="button_roentgenium" fitHeight="70.0" fitWidth="60.0" layoutX="599.0" layoutY="419.0" onMouseClicked="#roentgenium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_radon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="349.0" onMouseClicked="#radon_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_indium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="279.0" onMouseClicked="#indium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_tantalum" fitHeight="70.0" fitWidth="60.0" layoutX="255.0" layoutY="349.0" onMouseClicked="#tantalum_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_holmium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="538.0" onMouseClicked="#holmium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_uranium" fitHeight="70.0" fitWidth="60.0" layoutX="366.0" layoutY="608.0" onMouseClicked="#uranium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_promethium" fitHeight="70.0" fitWidth="60.0" layoutX="426.0" layoutY="538.0" onMouseClicked="#promethium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_francium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="419.0" onMouseClicked="#francium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_mendelevium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="608.0" onMouseClicked="#mendelevium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_nickel" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="209.0" onMouseClicked="#nickel_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_scandium" fitHeight="70.0" fitWidth="60.0" layoutX="138.0" layoutY="209.0" onMouseClicked="#scandium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_zirconium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="279.0" onMouseClicked="#zirconium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_magnesium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="139.0" onMouseClicked="#magnesium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_aluminium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="139.0" onMouseClicked="#aluminium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_thulium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="538.0" onMouseClicked="#thulium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_rubidium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="279.0" onMouseClicked="#rubidium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_sodium" fitHeight="70.0" fitWidth="60.0" layoutX="24.0" layoutY="139.0" onMouseClicked="#sodium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_lead" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="349.0" onMouseClicked="#lead_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_platinum" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="349.0" onMouseClicked="#platinum_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_sulfur" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="139.0" onMouseClicked="#sulfur_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_bismuth" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="349.0" onMouseClicked="#bismuth_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_oganesson" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="419.0" onMouseClicked="#oganesson_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_neon" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="70.0" onMouseClicked="#neon_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_chlorine" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="139.0" onMouseClicked="#chlorine_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_thallium" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="349.0" onMouseClicked="#thallium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_plutonium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="608.0" onMouseClicked="#plutonium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_carbon" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="70.0" onMouseClicked="#carbon_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_selenium" fitHeight="70.0" fitWidth="60.0" layoutX="887.0" layoutY="209.0" onMouseClicked="#selenium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_americium" fitHeight="70.0" fitWidth="60.0" layoutX="542.0" layoutY="608.0" onMouseClicked="#americium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_seaborgium" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="419.0" onMouseClicked="#seaborgium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_copernicium" fitHeight="70.0" fitWidth="60.0" layoutX="656.0" layoutY="419.0" onMouseClicked="#copernicium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_lutetium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="538.0" onMouseClicked="#lutetium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_boron" fitHeight="70.0" fitWidth="60.0" layoutX="716.0" layoutY="70.0" onMouseClicked="#boron_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -983,7 +927,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lawrencium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="608.0" onMouseClicked="#lawrencium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_tin" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="279.0" onMouseClicked="#tin_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -991,7 +935,63 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lutetium" fitHeight="70.0" fitWidth="60.0" layoutX="997.0" layoutY="538.0" onMouseClicked="#lutetium_action" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="button_meitnerium" fitHeight="70.0" fitWidth="60.0" layoutX="485.0" layoutY="419.0" onMouseClicked="#meitnerium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_tungsten" fitHeight="70.0" fitWidth="60.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#tungsten_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_hafnium" fitHeight="70.0" fitWidth="60.0" layoutX="196.0" layoutY="349.0" onMouseClicked="#hafnium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_radium" fitHeight="70.0" fitWidth="60.0" layoutX="81.0" layoutY="419.0" onMouseClicked="#radium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_vanadium" fitHeight="70.0" fitWidth="60.0" layoutX="253.0" layoutY="209.0" onMouseClicked="#vanadium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_ytterbium" fitHeight="70.0" fitWidth="60.0" layoutX="944.0" layoutY="538.0" onMouseClicked="#ytterbium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_flerovium" fitHeight="70.0" fitWidth="60.0" layoutX="773.0" layoutY="419.0" onMouseClicked="#flerovium_action" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="images/placeholder_element.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ImageView fx:id="button_erbium" fitHeight="70.0" fitWidth="60.0" layoutX="830.0" layoutY="538.0" onMouseClicked="#erbium_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
