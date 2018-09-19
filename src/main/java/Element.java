@@ -16,16 +16,15 @@ public class Element {
     private String image_link;
 
     public Element(String key){
-        //TODO Use key to lookup data in MySQL Database
 
-        String url = "FILLER";
+        String url = "jdbc:mysql://localhost:3306/csc8540";
         String user = "csc8540";
         String password = "chem";
 
         try {
             Connection con = DriverManager.getConnection(url, user, password);
             Statement st = con.createStatement();
-            String query = "SELECT * FROM Elements WHERE Element_Name = " + key;
+            String query = "SELECT * FROM elements WHERE Element_Name = " + key;
             ResultSet rs = st.executeQuery(query);
 
             name = rs.getString(2);
