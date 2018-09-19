@@ -288,716 +288,715 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     public void hydrogen_action(MouseEvent event)
     {
-        createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H and atomic number 1", "images/hydrogen_placeholder_description_image.png");
-        //TODO Use the get functions from the not yet created Element class to set all of the fields
-
+        createInformationScreen("Hydrogen");
     }
 
     @Override
     public void lithium_action(MouseEvent event)
     {
-
+        createInformationScreen("Lithium");
     }
 
     @Override
     public void sodium_action(MouseEvent event)
     {
-
+        createInformationScreen("Sodium");
     }
 
     @Override
     public void potassium_action(MouseEvent event)
     {
-
+        createInformationScreen("Potassium");
     }
 
     @Override
     public void rubidium_action(MouseEvent event)
     {
-
+        createInformationScreen("Rubidium");
     }
 
     @Override
     public void caesium_action(MouseEvent event)
     {
-
+        createInformationScreen("Caesium");
     }
 
     @Override
     public void francium_action(MouseEvent event)
     {
-
+        createInformationScreen("Francium");
     }
 
     @Override
     public void beryllium_action(MouseEvent event)
     {
-
+        createInformationScreen("Beryllium");
     }
 
     @Override
     public void magnesium_action(MouseEvent event)
     {
-
+        createInformationScreen("Magnesium");
     }
 
     @Override
     public void calcium_action(MouseEvent event)
     {
-
+        createInformationScreen("Calcium");
     }
 
     @Override
     public void strontium_action(MouseEvent event)
     {
-
+        createInformationScreen("Strontium");
     }
 
     @Override
     public void barium_action(MouseEvent event)
     {
-
+        createInformationScreen("Barium");
     }
 
     @Override
     public void radium_action(MouseEvent event)
     {
-
+        createInformationScreen("Radium");
     }
 
     @Override
     public void scandium_action(MouseEvent event)
     {
-
+        createInformationScreen("Scandium");
     }
 
     @Override
     public void yttrium_action(MouseEvent event)
     {
-
+        createInformationScreen("Yttrium");
     }
 
     @Override
     public void titanium_action(MouseEvent event)
     {
-
+        createInformationScreen("Titanium");
     }
 
     @Override
     public void zirconium_action(MouseEvent event)
     {
-
+        createInformationScreen("Zirconium");
     }
 
     @Override
     public void hafnium_action(MouseEvent event)
     {
-
+        createInformationScreen("Hafnium");
     }
 
     @Override
     public void rutherfordium_action(MouseEvent event)
     {
-
+        createInformationScreen("Rutherfordium");
     }
 
     @Override
     public void lanthanum_action(MouseEvent event)
     {
-
+        createInformationScreen("Lanthanum");
     }
 
     @Override
     public void actinium_action(MouseEvent event)
     {
-
+        createInformationScreen("Actinium");
     }
 
     @Override
     public void vanadium_action(MouseEvent event)
     {
-
+        createInformationScreen("Vanadium");
     }
 
     @Override
     public void niobium_action(MouseEvent event)
     {
-
+        createInformationScreen("Niobium");
     }
 
     @Override
     public void tantalum_action(MouseEvent event)
     {
-
+        createInformationScreen("Tantalum");
     }
 
     @Override
     public void dubnium_action(MouseEvent event)
     {
-
+        createInformationScreen("Dubnium");
     }
 
     @Override
     public void cerium_action(MouseEvent event)
     {
-
+        createInformationScreen("Cerium");
     }
 
     @Override
     public void thorium_action(MouseEvent event)
     {
-
+        createInformationScreen("Thorium");
     }
 
     @Override
     public void chromium_action(MouseEvent event)
     {
-
+        createInformationScreen("Chromium");
     }
 
     @Override
     public void molybdenum_action(MouseEvent event)
     {
-
+        createInformationScreen("Molybdenum");
     }
 
     @Override
     public void tungsten_action(MouseEvent event)
     {
-
+        createInformationScreen("Tungsten");
     }
 
     @Override
     public void seaborgium_action(MouseEvent event)
     {
-
+        createInformationScreen("Seaborgnium");
     }
 
     @Override
     public void praseodymium_action(MouseEvent event)
     {
-
+        createInformationScreen("Praseodymium");
     }
 
     @Override
     public void protactinium_action(MouseEvent event)
     {
-
+        createInformationScreen("Protactinium");
     }
 
     @Override
     public void manganese_action(MouseEvent event)
     {
-
+        createInformationScreen("Manganese");
     }
 
     @Override
     public void technetium_action(MouseEvent event)
     {
-
+        createInformationScreen("Technetium");
     }
 
     @Override
     public void rhenium_action(MouseEvent event)
     {
-
+        createInformationScreen("Rhenium");
     }
 
     @Override
     public void bohrium_action(MouseEvent event)
     {
-
+        createInformationScreen("Bohrium");
     }
 
     @Override
     public void neodymium_action(MouseEvent event)
     {
-
+        createInformationScreen("Neodymium");
     }
 
     @Override
     public void uranium_action(MouseEvent event)
     {
-
+        createInformationScreen("Uranium");
     }
 
     @Override
     public void iron_action(MouseEvent event)
     {
-
+        createInformationScreen("Iron");
     }
 
     @Override
     public void ruthenium_action(MouseEvent event)
     {
-
+        createInformationScreen("Ruthenium");
     }
 
     @Override
     public void osmium_action(MouseEvent event)
     {
-
+        createInformationScreen("Osmium");
     }
 
     @Override
     public void hassium_action(MouseEvent event)
     {
-
+        createInformationScreen("Hassium");
     }
 
     @Override
     public void promethium_action(MouseEvent event)
     {
-
+        createInformationScreen("Promethium");
     }
 
     @Override
     public void neptunium_action(MouseEvent event)
     {
-
+        createInformationScreen("Neptunium");
     }
 
     @Override
     public void cobalt_action(MouseEvent event)
     {
-
+        createInformationScreen("Cobalt");
     }
 
     @Override
     public void rhodium_action(MouseEvent event)
     {
-
+        createInformationScreen("Rhodium");
     }
 
     @Override
     public void iridium_action(MouseEvent event)
     {
-
+        createInformationScreen("Iridium");
     }
 
     @Override
     public void meitnerium_action(MouseEvent event)
     {
-
+        createInformationScreen("Meitnerium");
     }
 
     @Override
     public void samarium_action(MouseEvent event)
     {
-
+        createInformationScreen("Samarium");
     }
 
     @Override
     public void plutonium_action(MouseEvent event)
     {
-
+        createInformationScreen("Plutonium");
     }
 
     @Override
     public void nickel_action(MouseEvent event)
     {
-
+        createInformationScreen("Nickel");
     }
 
     @Override
     public void palladium_action(MouseEvent event)
     {
-
+        createInformationScreen("Palladium");
     }
 
     @Override
     public void platinum_action(MouseEvent event)
     {
-
+        createInformationScreen("Platinum");
     }
 
     @Override
     public void darmstadtium_action(MouseEvent event)
     {
-
+        createInformationScreen("Darmstadtium");
     }
 
     @Override
     public void europium_action(MouseEvent event)
     {
-
+        createInformationScreen("Europium");
     }
 
     @Override
     public void americium_action(MouseEvent event)
     {
-
+        createInformationScreen("Americium");
     }
 
     @Override
     public void copper_action(MouseEvent event)
     {
-
+        createInformationScreen("Copper");
     }
 
     @Override
     public void silver_action(MouseEvent event)
     {
-
+        createInformationScreen("Silver");
     }
 
     @Override
     public void gold_action(MouseEvent event)
     {
-
+        createInformationScreen("Gold");
     }
 
     @Override
     public void roentgenium_action(MouseEvent event)
     {
-
+        createInformationScreen("Roentgenium");
     }
 
     @Override
     public void gadolinium_action(MouseEvent event)
     {
-
+        createInformationScreen("Gadolinium");
     }
 
     @Override
     public void curium_action(MouseEvent event)
     {
-
+        createInformationScreen("Curium");
     }
 
     @Override
     public void zinc_action(MouseEvent event)
     {
-
+        createInformationScreen("Zinc");
     }
 
     @Override
     public void cadmium_action(MouseEvent event)
     {
-
+        createInformationScreen("Cadmium");
     }
 
     @Override
     public void mercury_action(MouseEvent event)
     {
-
+        createInformationScreen("Mercury");
     }
 
     @Override
     public void copernicium_action(MouseEvent event)
     {
-
+        createInformationScreen("Copernicium");
     }
 
     @Override
     public void terbium_action(MouseEvent event)
     {
-
+        createInformationScreen("Terbium");
     }
 
     @Override
     public void berkelium_action(MouseEvent event)
     {
-
+        createInformationScreen("Berkelium");
     }
 
     @Override
     public void boron_action(MouseEvent event)
     {
-
+        createInformationScreen("Boron");
     }
 
     @Override
     public void aluminium_action(MouseEvent event)
     {
-
+        createInformationScreen("Aluminium");
     }
 
     @Override
     public void gallium_action(MouseEvent event)
     {
-
+        createInformationScreen("Gallium");
     }
 
     @Override
     public void indium_action(MouseEvent event)
     {
-
+        createInformationScreen("Indium");
     }
 
     @Override
     public void thallium_action(MouseEvent event)
     {
-
+        createInformationScreen("Thallium");
     }
 
     @Override
     public void nihonium_action(MouseEvent event)
     {
-
+        createInformationScreen("Nihonium");
     }
 
     @Override
     public void dysprosium_action(MouseEvent event)
     {
-
+        createInformationScreen("Dysprosium");
     }
 
     @Override
     public void californium_action(MouseEvent event)
     {
-
+        createInformationScreen("Californium");
     }
 
     @Override
     public void carbon_action(MouseEvent event)
     {
-
+        createInformationScreen("Carbon");
     }
 
     @Override
     public void silicon_action(MouseEvent event)
     {
-
+        createInformationScreen("Silicon");
     }
 
     @Override
     public void germanium_action(MouseEvent event)
     {
-
+        createInformationScreen("Germanium");
     }
 
     @Override
     public void tin_action(MouseEvent event)
     {
-
+        createInformationScreen("Tin");
     }
 
     @Override
     public void lead_action(MouseEvent event)
     {
-
+        createInformationScreen("Lead");
     }
 
     @Override
     public void flerovium_action(MouseEvent event)
     {
-
+        createInformationScreen("Flerovium");
     }
 
     @Override
     public void holmium_action(MouseEvent event)
     {
-
+        createInformationScreen("Holmium");
     }
 
     @Override
     public void einsteinium_action(MouseEvent event)
     {
-
+        createInformationScreen("Einsteinium");
     }
 
     @Override
     public void nitrogen_action(MouseEvent event)
     {
-
+        createInformationScreen("Nitrogen");
     }
 
     @Override
     public void phosphorus_action(MouseEvent event)
     {
-
+        createInformationScreen("Phosphorus");
     }
 
     @Override
     public void arsenic_action(MouseEvent event)
     {
-
+        createInformationScreen("Arsenic");
     }
 
     @Override
     public void antimony_action(MouseEvent event)
     {
-
+        createInformationScreen("Antimony");
     }
 
     @Override
     public void bismuth_action(MouseEvent event)
     {
-
+        createInformationScreen("Bismuth");
     }
 
     @Override
     public void moscovium_action(MouseEvent event)
     {
-
+        createInformationScreen("Moscovium");
     }
 
     @Override
     public void erbium_action(MouseEvent event)
     {
-
+        createInformationScreen("Erbium");
     }
 
     @Override
     public void fermium_action(MouseEvent event)
     {
-
+        createInformationScreen("Fermium");
     }
 
     @Override
     public void oxygen_action(MouseEvent event)
     {
-
+        createInformationScreen("Oxygen");
     }
 
     @Override
     public void sulfur_action(MouseEvent event)
     {
-
+        createInformationScreen("Sulfur");
     }
 
     @Override
     public void selenium_action(MouseEvent event)
     {
-
+        createInformationScreen("Selenium");
     }
 
     @Override
     public void tellurium_action(MouseEvent event)
     {
-
+        createInformationScreen("Tellurium");
     }
 
     @Override
     public void polonium_action(MouseEvent event)
     {
-
+        createInformationScreen("Polonium");
     }
 
     @Override
     public void livermorium_action(MouseEvent event)
     {
-
+        createInformationScreen("Livermorium");
     }
 
     @Override
     public void thulium_action(MouseEvent event)
     {
-
+        createInformationScreen("Thulium");
     }
 
     @Override
     public void mendelevium_action(MouseEvent event)
     {
-
+        createInformationScreen("Mendelevium");
     }
 
     @Override
     public void fluorine_action(MouseEvent event)
     {
-
+        createInformationScreen("Fluorine");
     }
 
     @Override
     public void chlorine_action(MouseEvent event)
     {
-
+        createInformationScreen("Chlorine");
     }
 
     @Override
     public void bromine_action(MouseEvent event)
     {
-
+        createInformationScreen("Bromine");
     }
 
     @Override
     public void iodine_action(MouseEvent event)
     {
-
+        createInformationScreen("Iodine");
     }
 
     @Override
     public void astatine_action(MouseEvent event)
     {
-
+        createInformationScreen("Astatine");
     }
 
     @Override
     public void tennessine_action(MouseEvent event)
     {
-
+        createInformationScreen("Tennessine");
     }
 
     @Override
     public void ytterbium_action(MouseEvent event)
     {
-
+        createInformationScreen("Ytterbium");
     }
 
     @Override
     public void nobelium_action(MouseEvent event)
     {
-
+        createInformationScreen("Nobelium");
     }
 
     @Override
     public void helium_action(MouseEvent event)
     {
-
+        createInformationScreen("Helium");
     }
 
     @Override
     public void neon_action(MouseEvent event)
     {
-
+        createInformationScreen("Neon");
     }
 
     @Override
     public void argon_action(MouseEvent event)
     {
-
+        createInformationScreen("Argon");
     }
 
     @Override
     public void krypton_action(MouseEvent event)
     {
-
+        createInformationScreen("Krypton");
     }
 
     @Override
     public void xenon_action(MouseEvent event)
     {
-
+        createInformationScreen("Xenon");
     }
 
     @Override
     public void radon_action(MouseEvent event)
     {
-
+        createInformationScreen("Radon");
     }
 
     @Override
     public void oganesson_action(MouseEvent event)
     {
-
+        createInformationScreen("Organesson");
     }
 
     @Override
     public void lutetium_action(MouseEvent event)
     {
-
+        createInformationScreen("Lutetium");
     }
 
     @Override
     public void lawrencium_action(MouseEvent event)
     {
-
+        createInformationScreen("Lawrencium");
     }
 
 
-    public void createInformationScreen(String name, String atomicNumber, String meltingPoint, String boilingPoint, String description, String imagePath)
+    public void createInformationScreen(String name)
     {
+        Element element = new Element(name);
         try
         {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ElementInformationPanel.fxml"));
@@ -1006,12 +1005,12 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
             Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController(); //This is essential for changing values in other controller
 
             //Insert element information panel values here//
-            controller_elementInformationPanel.setName(name);
-            controller_elementInformationPanel.setAtomicNumber(atomicNumber);
-            controller_elementInformationPanel.setMeltingPoint(meltingPoint);
-            controller_elementInformationPanel.setBoilingPoint(boilingPoint);
-            controller_elementInformationPanel.setDescription(description);
-            controller_elementInformationPanel.setImage(imagePath);
+            controller_elementInformationPanel.setName(element.getName());
+            controller_elementInformationPanel.setAtomicNumber(String.valueOf(element.getAt_num()));
+            controller_elementInformationPanel.setMeltingPoint(String.valueOf(element.getMelting_pt()));
+            controller_elementInformationPanel.setBoilingPoint(String.valueOf(element.getBoiling_pt()));
+            controller_elementInformationPanel.setDescription(element.getDesc());
+            controller_elementInformationPanel.setImage(element.getImage_Link());
 
 
             stage_elementInformationPanel.setScene(new Scene(root_elementInformationPanel));
