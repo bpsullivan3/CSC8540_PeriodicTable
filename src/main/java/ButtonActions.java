@@ -1,5 +1,8 @@
 package main.java;
 
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 
 public interface ButtonActions
@@ -122,6 +125,8 @@ public interface ButtonActions
     void oganesson_action(MouseEvent event);
     void lutetium_action(MouseEvent event);
     void lawrencium_action(MouseEvent event);
+
+    void switchToListView(ActionEvent event);
 
 
 }

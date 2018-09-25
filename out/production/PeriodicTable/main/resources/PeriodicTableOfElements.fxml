@@ -1019,7 +1019,10 @@
                         <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
                      </items>
                   </Menu>
-                <Menu mnemonicParsing="false" text="View" />
+                <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem id="MenuItem_switchToListView" mnemonicParsing="false" onAction="#switchToListView" text="List View" />
+                     </items></Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
                     <MenuItem mnemonicParsing="false" text="About" />

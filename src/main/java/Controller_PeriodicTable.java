@@ -3,6 +3,8 @@ package main.java;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,6 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -992,6 +995,25 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @Override
     public void lawrencium_action(MouseEvent event)
     {
+
+    }
+
+    @Override
+    public void switchToListView (ActionEvent event)
+    {
+        try
+        {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ListView.fxml"));
+            Parent root_listView = fxmlLoader.load();
+            Stage stage_listView = new Stage();
+            Controller_ListView controller_listView = fxmlLoader.getController();
+            stage_listView.setScene(new Scene(root_listView));
+            stage_listView.show();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
     }
 
