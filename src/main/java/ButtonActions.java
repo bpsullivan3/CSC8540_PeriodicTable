@@ -126,6 +126,9 @@ public interface ButtonActions
     void lutetium_action(MouseEvent event);
     void lawrencium_action(MouseEvent event);
 
+    void zoom100Action (ActionEvent event);
+    void zoom150Action (ActionEvent event);
+    void zoom200Action (ActionEvent event);
     void switchToListView(ActionEvent event);
 
 

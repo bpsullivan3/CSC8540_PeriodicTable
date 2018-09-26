@@ -8,13 +8,16 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.print.Printer;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -36,8 +39,12 @@ import java.util.ResourceBundle;
 public class Controller_PeriodicTable implements ButtonActions, Initializable
 {
     public ImageView[] elementButtons = new ImageView[118];
+
+
     @FXML
-    private MenuItem exit_button;
+    private MenuItem zoom200;
+    @FXML
+    private GridPane GridPane_periodicTable;
     @FXML
     private AnchorPane root;
     @FXML
@@ -281,11 +288,52 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
 
 
 
+    @FXML
+    public void zoom100Action (ActionEvent event)
+    {
+        GridPane_periodicTable.setPrefWidth(1073);
+        GridPane_periodicTable.setPrefHeight(737);
+        root.setTopAnchor(GridPane_periodicTable, (double)0);
+        root.setLeftAnchor(GridPane_periodicTable, (double)0);
+        root.setRightAnchor(GridPane_periodicTable, (double)0);
+        root.setBottomAnchor(GridPane_periodicTable, (double)0);
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(70);
+            elementButtons[i].setFitWidth(60);
+        }
+    }
 
     @FXML
-    void exitProgram(ActionEvent event)
+    public void zoom150Action (ActionEvent event)
     {
-        System.exit(0);
+        root.clearConstraints(GridPane_periodicTable);
+        GridPane_periodicTable.setPrefWidth(1609);
+        GridPane_periodicTable.setPrefHeight(1105);
+
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(105);
+            elementButtons[i].setFitWidth(90);
+        }
+    }
+
+    @FXML
+    public void zoom200Action (ActionEvent event)
+    {
+        root.clearConstraints(GridPane_periodicTable);
+        GridPane_periodicTable.setPrefWidth(2146);
+        GridPane_periodicTable.setPrefHeight(1474);
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(140);
+            elementButtons[i].setFitWidth(120);
+        }
+
+
     }
 
     @FXML
@@ -997,6 +1045,9 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     {
 
     }
+
+
+
 
     @Override
     public void switchToListView (ActionEvent event)

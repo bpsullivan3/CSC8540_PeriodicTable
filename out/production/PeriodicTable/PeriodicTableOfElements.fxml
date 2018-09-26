@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.CheckMenuItem?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller_PeriodicTable">
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller_PeriodicTable">
    <children>
-      <GridPane layoutX="14.0" layoutY="18.0" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <GridPane fx:id="GridPane_periodicTable" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -31,7 +28,7 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -155,7 +152,7 @@
             </ImageView>
             <ImageView fx:id="button_radium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#radium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
                <image>
-                  <Image url="images/placeholder_element.png" />
+                    <Image url="images/placeholder_element.png" />
                </image>
                <viewport>
                   <Rectangle2D />
@@ -324,7 +321,7 @@
             <ImageView fx:id="button_manganese" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#manganese_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
-               </image>
+                     </image>
                <viewport>
                   <Rectangle2D />
                </viewport>
@@ -1006,42 +1003,42 @@
                   <Font name="Gloucester MT Extra Condensed" size="44.0" />
                </font>
             </Label>
-            <MenuBar prefHeight="43.0" prefWidth="1073.0" GridPane.columnSpan="20">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                  <Menu mnemonicParsing="false" text="Filters">
-                     <items>
-                        <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
-                        <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
-                     </items>
-                  </Menu>
-                <Menu mnemonicParsing="false" text="View">
-                     <items>
-                        <MenuItem id="MenuItem_switchToListView" mnemonicParsing="false" onAction="#switchToListView" text="List View" />
-                     </items></Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-                  <Menu mnemonicParsing="false" text="Exit">
-                     <items>
-                        <MenuItem fx:id="exit_button" mnemonicParsing="false" onAction="#exitProgram" text="Exit Program" />
-                     </items>
-                  </Menu>
-              </menus>
-               <padding>
-                  <Insets bottom="2.0" />
-               </padding>
-               <GridPane.margin>
-                  <Insets top="-25.0" />
-               </GridPane.margin>
-            </MenuBar>
          </children>
       </GridPane>
+      <MenuBar layoutX="-659.0" layoutY="130.0" prefHeight="43.0" prefWidth="1073.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Filters">
+               <items>
+                  <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+                  <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem id="MenuItem_switchToListView" mnemonicParsing="false" onAction="#switchToListView" text="List View" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Zoom">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#zoom100Action" text="100" />
+                  <MenuItem mnemonicParsing="false" onAction="#zoom150Action" text="150" />
+                  <MenuItem mnemonicParsing="false" onAction="#zoom200Action" text="200" />
+               </items>
+            </Menu>
+        </menus>
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </MenuBar>
    </children>
 </AnchorPane>
