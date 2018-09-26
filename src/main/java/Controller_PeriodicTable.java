@@ -1,18 +1,11 @@
 package main.java;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.print.Printer;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -39,6 +32,9 @@ import java.util.ResourceBundle;
 public class Controller_PeriodicTable implements ButtonActions, Initializable
 {
     public ImageView[] elementButtons = new ImageView[118];
+
+    private int elementInformationPanelInstanceCount = 0;
+    private Stage stage_elementInformationPanel;
 
 
     @FXML
@@ -287,16 +283,15 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     public ImageView button_meitnerium;
 
 
-
     @FXML
-    public void zoom100Action (ActionEvent event)
+    public void zoom100Action(ActionEvent event)
     {
         GridPane_periodicTable.setPrefWidth(1073);
         GridPane_periodicTable.setPrefHeight(737);
-        root.setTopAnchor(GridPane_periodicTable, (double)0);
-        root.setLeftAnchor(GridPane_periodicTable, (double)0);
-        root.setRightAnchor(GridPane_periodicTable, (double)0);
-        root.setBottomAnchor(GridPane_periodicTable, (double)0);
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) 0);
+        root.setBottomAnchor(GridPane_periodicTable, (double) 0);
 
         for (int i = 0; i < 118; i++)
         {
@@ -306,7 +301,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
     @FXML
-    public void zoom150Action (ActionEvent event)
+    public void zoom150Action(ActionEvent event)
     {
         root.clearConstraints(GridPane_periodicTable);
         GridPane_periodicTable.setPrefWidth(1609);
@@ -321,7 +316,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
     @FXML
-    public void zoom200Action (ActionEvent event)
+    public void zoom200Action(ActionEvent event)
     {
         root.clearConstraints(GridPane_periodicTable);
         GridPane_periodicTable.setPrefWidth(2146);
@@ -339,7 +334,8 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     public void hydrogen_action(MouseEvent event)
     {
-        createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H and atomic number 1", "images/hydrogen_placeholder_description_image.png");
+        createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H and" +
+                " atomic number 1", "images/hydrogen_placeholder_description_image.png");
         //TODO Use the get functions from the not yet created Element class to set all of the fields
 
     }
@@ -1047,10 +1043,8 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
 
-
-
     @Override
-    public void switchToListView (ActionEvent event)
+    public void switchToListView(ActionEvent event)
     {
         try
         {
@@ -1069,14 +1063,24 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
 
-    public void createInformationScreen(String name, String atomicNumber, String meltingPoint, String boilingPoint, String description, String imagePath)
+    public void createInformationScreen(String name, String atomicNumber, String meltingPoint, String boilingPoint,
+                                        String description, String imagePath)
     {
         try
         {
+            elementInformationPanelInstanceCount += 1;
+
+            if (elementInformationPanelInstanceCount > 1)
+            {
+                stage_elementInformationPanel.close();
+            }
+
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ElementInformationPanel.fxml"));
             Parent root_elementInformationPanel = fxmlLoader.load();
-            Stage stage_elementInformationPanel = new Stage();
-            Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController(); //This is essential for changing values in other controller
+            stage_elementInformationPanel = new Stage();
+            Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController();
+            //This is essential for changing values in other controller
 
             //Insert element information panel values here//
             controller_elementInformationPanel.setName(name);
@@ -1086,9 +1090,9 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
             controller_elementInformationPanel.setDescription(description);
             controller_elementInformationPanel.setImage(imagePath);
 
-
             stage_elementInformationPanel.setScene(new Scene(root_elementInformationPanel));
             stage_elementInformationPanel.show();
+
         }
         catch (Exception e)
         {
@@ -1099,6 +1103,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+
         elementButtons[0] = button_hydrogen;
         elementButtons[1] = button_helium;
         elementButtons[2] = button_lithium;
@@ -1220,7 +1225,6 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
 
 
     }
-
 
 
 }
