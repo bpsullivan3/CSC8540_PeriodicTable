@@ -3,6 +3,8 @@ package main.java;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 
 public interface ButtonActions
@@ -125,6 +127,9 @@ public interface ButtonActions
     void oganesson_action(MouseEvent event);
     void lutetium_action(MouseEvent event);
     void lawrencium_action(MouseEvent event);
+
+    void dragEnter (MouseEvent event);
+    void dragExit (MouseEvent event);
 
     void zoom100Action (ActionEvent event);
     void zoom150Action (ActionEvent event);

@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -1042,6 +1044,22 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
 
     }
 
+    @Override
+    public void dragEnter (MouseEvent event)
+    {
+        ImageView sourceButton = (ImageView) event.getSource();
+        sourceButton.setFitHeight(80);
+        sourceButton.setFitWidth(90);
+    }
+
+    public void dragExit(MouseEvent event)
+    {
+        ImageView sourceButton = (ImageView) event.getSource();
+        sourceButton.setFitHeight(70);
+        sourceButton.setFitWidth(60);
+
+    }
+
 
     @Override
     public void switchToListView(ActionEvent event)
@@ -1224,7 +1242,10 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         elementButtons[117] = button_oganesson;
 
 
+
     }
+
+
 
 
 }
