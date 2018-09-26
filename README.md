@@ -27,7 +27,9 @@ User interface TODOs
   ~~1) Create a way to zoom in on the table.~~
    Zoom included now, but panning needs to be added to move screen around when zoomed in.
   
-  2) Currently, clicking on a button after a window is open will open another window. It should either exit out of the first window automatically, or not allow users to click on more buttons until the window is closed.
+  ~~2) Currently, clicking on a button after a window is open will open another window. It should either exit out of the first window automatically, or not allow users to click on more buttons until the window is closed.~~
+  Fixed with instance counts of elementInformationPanel
+  
   3) Create a list view. *Need element class finished to work on this to test populating data*
   4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable.
   5) Make it so highlighting an element button makes it enlarge slightly for asthetic appeal.
