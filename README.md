@@ -25,7 +25,7 @@ FXML PeriodicTableOfElements.fxml
 User interface TODOs
 
   ~~1) Create a way to zoom in on the table.~~
-   Zoom included now, but panning needs to be added to move screen around when zoomed in.
+   ~~Zoom included now, but panning needs to be added to move screen around when zoomed in.~~
   
   ~~2) Currently, clicking on a button after a window is open will open another window. It should either exit out of the first window automatically, or not allow users to click on more buttons until the window is closed.~~
   Fixed with instance counts of elementInformationPanel
@@ -42,4 +42,5 @@ User interface TODOs
     
   8) Images for each of the element buttons need to be created. They should have all parts of the layout of the periodic table and should also look nice as it is the main thing users will be looking at when opening the program.
   
-  9) Add panning to screen when zoomed in.
+  ~~9) Add panning to screen when zoomed in.~~
+  Zooming now complete with panning in both 150% zoom and 200% zoom. Center screen button included under view menu.
