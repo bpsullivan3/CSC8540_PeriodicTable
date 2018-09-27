@@ -31,11 +31,11 @@ User interface TODOs
   Fixed with instance counts of elementInformationPanel
   
   3) Create a list view. *Need element class finished to work on this to test populating data*
-  4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable.
+  4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable. *Need element class to work on this for testing*
   
   ~~5) Make it so highlighting an element button makes it enlarge slightly for asthetic appeal.~~
   
-  6) Add the filter options under the filters tab.
+  6) Add the filter options under the filters tab. *Need element class finished to know what filters are available and for testing*
   
 ~~7) Changing the size of the panel does not adjust the size of the components within the panel - this should be fixed.~~
   Fixed by changing from a regular pane to a gridpane. This should be done to the element information popup pane as well.
