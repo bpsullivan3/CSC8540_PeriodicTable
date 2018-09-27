@@ -32,7 +32,9 @@ User interface TODOs
   
   3) Create a list view. *Need element class finished to work on this to test populating data*
   4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable.
-  5) Make it so highlighting an element button makes it enlarge slightly for asthetic appeal.
+  
+  ~~5) Make it so highlighting an element button makes it enlarge slightly for asthetic appeal.~~
+  
   6) Add the filter options under the filters tab.
   
 ~~7) Changing the size of the panel does not adjust the size of the components within the panel - this should be fixed.~~
