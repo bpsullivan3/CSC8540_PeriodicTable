@@ -25,21 +25,22 @@ FXML PeriodicTableOfElements.fxml
 User interface TODOs
 
   ~~1) Create a way to zoom in on the table.~~
-   Zoom included now, but panning needs to be added to move screen around when zoomed in.
+   ~~Zoom included now, but panning needs to be added to move screen around when zoomed in.~~
   
   ~~2) Currently, clicking on a button after a window is open will open another window. It should either exit out of the first window automatically, or not allow users to click on more buttons until the window is closed.~~
   Fixed with instance counts of elementInformationPanel
   
   3) Create a list view. *Need element class finished to work on this to test populating data*
-  4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable.
+  4) Create sliders for filters such as melting point and boiling point where a toggleable filter would not be applicable. *Need element class to work on this for testing*
   
   ~~5) Make it so highlighting an element button makes it enlarge slightly for asthetic appeal.~~
   
-  6) Add the filter options under the filters tab.
+  6) Add the filter options under the filters tab. *Need element class finished to know what filters are available and for testing*
   
 ~~7) Changing the size of the panel does not adjust the size of the components within the panel - this should be fixed.~~
   Fixed by changing from a regular pane to a gridpane. This should be done to the element information popup pane as well.
     
   8) Images for each of the element buttons need to be created. They should have all parts of the layout of the periodic table and should also look nice as it is the main thing users will be looking at when opening the program.
   
-  9) Add panning to screen when zoomed in.
+  ~~9) Add panning to screen when zoomed in.~~
+  Zooming now complete with panning in both 150% zoom and 200% zoom. Center screen button included under view menu.
