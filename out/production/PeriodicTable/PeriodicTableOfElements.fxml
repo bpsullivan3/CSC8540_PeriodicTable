@@ -17,7 +17,7 @@
 
 <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller_PeriodicTable">
    <children>
-      <GridPane fx:id="GridPane_periodicTable" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <GridPane fx:id="GridPane_periodicTable" onMouseDragged="#panScreen" onMousePressed="#panScreenStarted" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -54,7 +54,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="button_hydrogen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hydrogen_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <ImageView fx:id="button_hydrogen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hydrogen_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
                   <Image url="images/hydrogen_placeholder_image.png" />
                </image>
@@ -62,7 +62,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lithium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lithium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <ImageView fx:id="button_lithium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lithium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -70,7 +70,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_sodium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#sodium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <ImageView fx:id="button_sodium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#sodium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -78,7 +78,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_potassium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#potassium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <ImageView fx:id="button_potassium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#potassium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -86,7 +86,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_rubidium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rubidium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <ImageView fx:id="button_rubidium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rubidium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -94,7 +94,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_caesium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#caesium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <ImageView fx:id="button_caesium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#caesium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -102,7 +102,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_francium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#francium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <ImageView fx:id="button_francium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#francium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -110,7 +110,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_beryllium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#beryllium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <ImageView fx:id="button_beryllium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#beryllium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -118,7 +118,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_magnesium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#magnesium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <ImageView fx:id="button_magnesium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#magnesium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -126,7 +126,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_calcium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#calcium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <ImageView fx:id="button_calcium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#calcium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -134,7 +134,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_strontium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#strontium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <ImageView fx:id="button_strontium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#strontium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -142,7 +142,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_barium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#barium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <ImageView fx:id="button_barium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#barium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -150,7 +150,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_radium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#radium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+            <ImageView fx:id="button_radium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#radium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
                <image>
                     <Image url="images/placeholder_element.png" />
                </image>
@@ -158,7 +158,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_scandium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#scandium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <ImageView fx:id="button_scandium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#scandium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -166,7 +166,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_yttrium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#yttrium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+            <ImageView fx:id="button_yttrium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#yttrium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -174,7 +174,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_titanium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#titanium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+            <ImageView fx:id="button_titanium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#titanium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -182,7 +182,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_zirconium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#zirconium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+            <ImageView fx:id="button_zirconium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#zirconium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -190,7 +190,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_hafnium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hafnium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+            <ImageView fx:id="button_hafnium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hafnium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -198,7 +198,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_rutherfordium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rutherfordium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+            <ImageView fx:id="button_rutherfordium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rutherfordium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -206,7 +206,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lanthanum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lanthanum_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
+            <ImageView fx:id="button_lanthanum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lanthanum_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -214,7 +214,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_actinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#actinium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
+            <ImageView fx:id="button_actinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#actinium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -222,7 +222,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_vanadium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#vanadium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+            <ImageView fx:id="button_vanadium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#vanadium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -230,7 +230,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_niobium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#niobium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+            <ImageView fx:id="button_niobium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#niobium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -238,7 +238,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_tantalum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tantalum_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+            <ImageView fx:id="button_tantalum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tantalum_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -246,7 +246,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_dubnium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#dubnium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+            <ImageView fx:id="button_dubnium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#dubnium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -254,7 +254,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_cerium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cerium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9">
+            <ImageView fx:id="button_cerium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cerium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -262,7 +262,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_thorium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thorium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="10">
+            <ImageView fx:id="button_thorium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thorium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -270,7 +270,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_chromium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#chromium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+            <ImageView fx:id="button_chromium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#chromium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -278,7 +278,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_molybdenum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#molybdenum_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+            <ImageView fx:id="button_molybdenum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#molybdenum_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -286,7 +286,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_tungsten" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tungsten_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+            <ImageView fx:id="button_tungsten" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tungsten_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -294,7 +294,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_seaborgium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#seaborgium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+            <ImageView fx:id="button_seaborgium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#seaborgium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -302,7 +302,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_praseodymium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#praseodymium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9">
+            <ImageView fx:id="button_praseodymium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#praseodymium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -310,7 +310,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_protactinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#protactinium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
+            <ImageView fx:id="button_protactinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#protactinium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -318,7 +318,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_manganese" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#manganese_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+            <ImageView fx:id="button_manganese" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#manganese_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                      </image>
@@ -326,7 +326,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_technetium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#technetium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+            <ImageView fx:id="button_technetium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#technetium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -334,7 +334,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_rhenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rhenium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6">
+            <ImageView fx:id="button_rhenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rhenium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -342,7 +342,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_bohrium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bohrium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
+            <ImageView fx:id="button_bohrium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bohrium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -350,7 +350,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_neodymium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neodymium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9">
+            <ImageView fx:id="button_neodymium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neodymium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -358,7 +358,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_uranium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#uranium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="10">
+            <ImageView fx:id="button_uranium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#uranium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -366,7 +366,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_iron" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iron_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+            <ImageView fx:id="button_iron" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iron_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -374,7 +374,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_ruthenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#ruthenium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5">
+            <ImageView fx:id="button_ruthenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#ruthenium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -382,7 +382,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_osmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#osmium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+            <ImageView fx:id="button_osmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#osmium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -390,7 +390,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_hassium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hassium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7">
+            <ImageView fx:id="button_hassium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#hassium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -398,7 +398,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_promethium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#promethium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9">
+            <ImageView fx:id="button_promethium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#promethium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -406,7 +406,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_neptunium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neptunium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="10">
+            <ImageView fx:id="button_neptunium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neptunium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -414,7 +414,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_cobalt" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cobalt_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4">
+            <ImageView fx:id="button_cobalt" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cobalt_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -422,7 +422,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_rhodium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rhodium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
+            <ImageView fx:id="button_rhodium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#rhodium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -430,7 +430,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_iridium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iridium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6">
+            <ImageView fx:id="button_iridium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iridium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -438,7 +438,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_meitnerium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#meitnerium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
+            <ImageView fx:id="button_meitnerium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#meitnerium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -446,7 +446,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_samarium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#samarium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9">
+            <ImageView fx:id="button_samarium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#samarium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -454,7 +454,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_plutonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#plutonium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="10">
+            <ImageView fx:id="button_plutonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#plutonium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -462,7 +462,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_nickel" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nickel_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
+            <ImageView fx:id="button_nickel" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nickel_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -470,7 +470,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_palladium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#palladium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5">
+            <ImageView fx:id="button_palladium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#palladium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -478,7 +478,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_platinum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#platinum_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
+            <ImageView fx:id="button_platinum" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#platinum_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -486,7 +486,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_darmstadtium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#darmstadtium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7">
+            <ImageView fx:id="button_darmstadtium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#darmstadtium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -494,7 +494,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_europium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#europium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9">
+            <ImageView fx:id="button_europium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#europium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -502,7 +502,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_americium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#americium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10">
+            <ImageView fx:id="button_americium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#americium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -510,7 +510,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_copper" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#copper_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4">
+            <ImageView fx:id="button_copper" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#copper_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -518,7 +518,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_silver" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#silver_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5">
+            <ImageView fx:id="button_silver" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#silver_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -526,7 +526,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_gold" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gold_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6">
+            <ImageView fx:id="button_gold" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gold_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -534,7 +534,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_roentgenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#roentgenium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7">
+            <ImageView fx:id="button_roentgenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#roentgenium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -542,7 +542,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_gadolinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gadolinium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9">
+            <ImageView fx:id="button_gadolinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gadolinium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -550,7 +550,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_curium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#curium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="10">
+            <ImageView fx:id="button_curium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#curium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -558,7 +558,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_berkelium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#berkelium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="10">
+            <ImageView fx:id="button_berkelium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#berkelium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -566,7 +566,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_terbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#terbium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="9">
+            <ImageView fx:id="button_terbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#terbium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -574,7 +574,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_copernicium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#copernicium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="7">
+            <ImageView fx:id="button_copernicium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#copernicium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -582,7 +582,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_mercury" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#mercury_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="6">
+            <ImageView fx:id="button_mercury" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#mercury_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -590,7 +590,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_cadmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cadmium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="5">
+            <ImageView fx:id="button_cadmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#cadmium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -598,7 +598,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_zinc" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#zinc_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
+            <ImageView fx:id="button_zinc" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#zinc_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -606,7 +606,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_californium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#californium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="10">
+            <ImageView fx:id="button_californium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#californium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -614,7 +614,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_dysprosium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#dysprosium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="9">
+            <ImageView fx:id="button_dysprosium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#dysprosium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -622,7 +622,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_nihonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nihonium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="7">
+            <ImageView fx:id="button_nihonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nihonium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -630,7 +630,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_thallium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thallium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="6">
+            <ImageView fx:id="button_thallium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thallium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -638,7 +638,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_indium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#indium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="5">
+            <ImageView fx:id="button_indium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#indium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -646,7 +646,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_gallium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gallium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="4">
+            <ImageView fx:id="button_gallium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#gallium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -654,7 +654,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_aluminium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#aluminium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="3">
+            <ImageView fx:id="button_aluminium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#aluminium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -662,7 +662,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_boron" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#boron_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="2">
+            <ImageView fx:id="button_boron" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#boron_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -670,7 +670,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_carbon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#carbon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="2">
+            <ImageView fx:id="button_carbon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#carbon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -678,7 +678,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_silicon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#silicon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="3">
+            <ImageView fx:id="button_silicon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#silicon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -686,7 +686,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_germanium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#germanium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="4">
+            <ImageView fx:id="button_germanium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#germanium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -694,7 +694,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_tin" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tin_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="5">
+            <ImageView fx:id="button_tin" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tin_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -702,7 +702,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lead" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lead_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="6">
+            <ImageView fx:id="button_lead" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lead_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -710,7 +710,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_flerovium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#flerovium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="7">
+            <ImageView fx:id="button_flerovium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#flerovium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -718,7 +718,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_holmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#holmium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="9">
+            <ImageView fx:id="button_holmium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#holmium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -726,7 +726,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_einsteinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#einsteinium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="10">
+            <ImageView fx:id="button_einsteinium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#einsteinium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -734,7 +734,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_fermium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#fermium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="10">
+            <ImageView fx:id="button_fermium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#fermium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -742,7 +742,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_erbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#erbium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="9">
+            <ImageView fx:id="button_erbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#erbium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -750,7 +750,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_moscovium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#moscovium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="7">
+            <ImageView fx:id="button_moscovium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#moscovium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -758,7 +758,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_bismuth" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bismuth_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="6">
+            <ImageView fx:id="button_bismuth" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bismuth_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -766,7 +766,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_antimony" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#antimony_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="5">
+            <ImageView fx:id="button_antimony" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#antimony_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -774,7 +774,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_arsenic" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#arsenic_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="4">
+            <ImageView fx:id="button_arsenic" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#arsenic_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -782,7 +782,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_phosphorus" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#phosphorus_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="3">
+            <ImageView fx:id="button_phosphorus" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#phosphorus_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -790,7 +790,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_nitrogen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nitrogen_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="2">
+            <ImageView fx:id="button_nitrogen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nitrogen_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -798,7 +798,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_mendelevium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#mendelevium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="10">
+            <ImageView fx:id="button_mendelevium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#mendelevium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -806,7 +806,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_nobelium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nobelium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="10">
+            <ImageView fx:id="button_nobelium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#nobelium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -814,7 +814,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lawrencium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lawrencium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="10">
+            <ImageView fx:id="button_lawrencium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lawrencium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="10">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -822,7 +822,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_thulium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thulium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="9">
+            <ImageView fx:id="button_thulium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#thulium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -830,7 +830,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_ytterbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#ytterbium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="9">
+            <ImageView fx:id="button_ytterbium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#ytterbium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -838,7 +838,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_lutetium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lutetium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="9">
+            <ImageView fx:id="button_lutetium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#lutetium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="9">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -846,7 +846,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_livermorium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#livermorium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="7">
+            <ImageView fx:id="button_livermorium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#livermorium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -854,7 +854,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_tennessine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tennessine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="7">
+            <ImageView fx:id="button_tennessine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tennessine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -862,7 +862,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_oganesson" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#oganesson_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="7">
+            <ImageView fx:id="button_oganesson" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#oganesson_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="7">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -870,7 +870,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_polonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#polonium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="6">
+            <ImageView fx:id="button_polonium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#polonium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -878,7 +878,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_astatine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#astatine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="6">
+            <ImageView fx:id="button_astatine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#astatine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -886,7 +886,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_radon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#radon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="6">
+            <ImageView fx:id="button_radon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#radon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="6">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -894,7 +894,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_tellurium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tellurium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="5">
+            <ImageView fx:id="button_tellurium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#tellurium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -902,7 +902,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_iodine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iodine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="5">
+            <ImageView fx:id="button_iodine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#iodine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -910,7 +910,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_xenon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#xenon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="5">
+            <ImageView fx:id="button_xenon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#xenon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="5">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -918,7 +918,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_selenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#selenium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="4">
+            <ImageView fx:id="button_selenium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#selenium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -926,7 +926,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_bromine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bromine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="4">
+            <ImageView fx:id="button_bromine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#bromine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -934,7 +934,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_krypton" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#krypton_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="4">
+            <ImageView fx:id="button_krypton" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#krypton_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="4">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -942,7 +942,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_sulfur" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#sulfur_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="3">
+            <ImageView fx:id="button_sulfur" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#sulfur_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -950,7 +950,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_chlorine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#chlorine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="3">
+            <ImageView fx:id="button_chlorine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#chlorine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -958,7 +958,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_argon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#argon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="3">
+            <ImageView fx:id="button_argon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#argon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="3">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -966,7 +966,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_oxygen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#oxygen_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="2">
+            <ImageView fx:id="button_oxygen" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#oxygen_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -974,7 +974,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_fluorine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#fluorine_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="2">
+            <ImageView fx:id="button_fluorine" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#fluorine_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -982,7 +982,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_neon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neon_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="2">
+            <ImageView fx:id="button_neon" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#neon_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="2">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -990,7 +990,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <ImageView fx:id="button_helium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#helium_action" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="1">
+            <ImageView fx:id="button_helium" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#helium_action" onMouseEntered="#dragEnter" onMouseExited="#dragExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="18" GridPane.rowIndex="1">
                <image>
                   <Image url="images/placeholder_element.png" />
                </image>
@@ -1021,6 +1021,7 @@
           <Menu mnemonicParsing="false" text="View">
                <items>
                   <MenuItem id="MenuItem_switchToListView" mnemonicParsing="false" onAction="#switchToListView" text="List View" />
+                  <MenuItem mnemonicParsing="false" onAction="#centerScreenAction" text="Center Screen" />
                </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -1030,9 +1031,9 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Zoom">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#zoom100Action" text="100" />
-                  <MenuItem mnemonicParsing="false" onAction="#zoom150Action" text="150" />
-                  <MenuItem mnemonicParsing="false" onAction="#zoom200Action" text="200" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom100" mnemonicParsing="false" onAction="#zoom100Action" text="100" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom150" mnemonicParsing="false" onAction="#zoom150Action" text="150" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom200" mnemonicParsing="false" onAction="#zoom200Action" text="200" />
                </items>
             </Menu>
         </menus>

@@ -7,6 +7,8 @@ import javafx.scene.input.DragEvent;
 import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 
+import javax.swing.*;
+
 public interface ButtonActions
 {
     void hydrogen_action(MouseEvent event);
@@ -130,7 +132,10 @@ public interface ButtonActions
 
     void dragEnter (MouseEvent event);
     void dragExit (MouseEvent event);
+    void panScreen (MouseEvent event);
+    void panScreenStarted (MouseEvent event);
 
+    void centerScreenAction(ActionEvent event);
     void zoom100Action (ActionEvent event);
     void zoom150Action (ActionEvent event);
     void zoom200Action (ActionEvent event);

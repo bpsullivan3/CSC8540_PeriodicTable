@@ -17,7 +17,7 @@
 
 <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller_PeriodicTable">
    <children>
-      <GridPane fx:id="GridPane_periodicTable" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <GridPane fx:id="GridPane_periodicTable" onMouseDragged="#panScreen" onMousePressed="#panScreenStarted" prefHeight="737.0" prefWidth="1073.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -1021,6 +1021,7 @@
           <Menu mnemonicParsing="false" text="View">
                <items>
                   <MenuItem id="MenuItem_switchToListView" mnemonicParsing="false" onAction="#switchToListView" text="List View" />
+                  <MenuItem mnemonicParsing="false" onAction="#centerScreenAction" text="Center Screen" />
                </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -1030,9 +1031,9 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Zoom">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#zoom100Action" text="100" />
-                  <MenuItem mnemonicParsing="false" onAction="#zoom150Action" text="150" />
-                  <MenuItem mnemonicParsing="false" onAction="#zoom200Action" text="200" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom100" mnemonicParsing="false" onAction="#zoom100Action" text="100" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom150" mnemonicParsing="false" onAction="#zoom150Action" text="150" />
+                  <CheckMenuItem fx:id="CheckMenuItem_zoom200" mnemonicParsing="false" onAction="#zoom200Action" text="200" />
                </items>
             </Menu>
         </menus>

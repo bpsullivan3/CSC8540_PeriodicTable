@@ -4,12 +4,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -36,7 +36,15 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     public ImageView[] elementButtons = new ImageView[118];
 
     private int elementInformationPanelInstanceCount = 0;
+    private int currentZoomLevel = 0;
+    /*
+    0 = 100%
+    1 = 150%
+    2 = 200%
+     */
     private Stage stage_elementInformationPanel;
+    private int corX = 0;
+    private int corY = 0;
 
 
     @FXML
@@ -47,6 +55,12 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     private AnchorPane root;
     @FXML
     private Pane pane;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom100;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom150;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom200;
     @FXML
     public ImageView button_boron;
     @FXML
@@ -288,12 +302,18 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     public void zoom100Action(ActionEvent event)
     {
-        GridPane_periodicTable.setPrefWidth(1073);
-        GridPane_periodicTable.setPrefHeight(737);
+        CheckMenuItem_zoom150.setSelected(false);
+        CheckMenuItem_zoom200.setSelected(false);
+        currentZoomLevel = 0;
         root.setTopAnchor(GridPane_periodicTable, (double) 0);
         root.setLeftAnchor(GridPane_periodicTable, (double) 0);
         root.setRightAnchor(GridPane_periodicTable, (double) 0);
         root.setBottomAnchor(GridPane_periodicTable, (double) 0);
+        GridPane_periodicTable.setPrefWidth(1073);
+        GridPane_periodicTable.setPrefHeight(737);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
+
 
         for (int i = 0; i < 118; i++)
         {
@@ -305,9 +325,17 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     public void zoom150Action(ActionEvent event)
     {
-        root.clearConstraints(GridPane_periodicTable);
+        CheckMenuItem_zoom100.setSelected(false);
+        CheckMenuItem_zoom200.setSelected(false);
+        currentZoomLevel = 1;
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) -536);
+        root.setBottomAnchor(GridPane_periodicTable, (double) -368);
         GridPane_periodicTable.setPrefWidth(1609);
         GridPane_periodicTable.setPrefHeight(1105);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
 
 
         for (int i = 0; i < 118; i++)
@@ -320,9 +348,17 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     public void zoom200Action(ActionEvent event)
     {
-        root.clearConstraints(GridPane_periodicTable);
+        CheckMenuItem_zoom100.setSelected(false);
+        CheckMenuItem_zoom150.setSelected(false);
+        currentZoomLevel = 2;
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) -1073);
+        root.setBottomAnchor(GridPane_periodicTable, (double) -737);
         GridPane_periodicTable.setPrefWidth(2146);
         GridPane_periodicTable.setPrefHeight(1474);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
 
         for (int i = 0; i < 118; i++)
         {
@@ -334,10 +370,17 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
     @FXML
+    public void centerScreenAction (ActionEvent event)
+    {
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
+    }
+
+    @FXML
     public void hydrogen_action(MouseEvent event)
     {
-        createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H and" +
-                " atomic number 1", "images/hydrogen_placeholder_description_image.png");
+        createInformationScreen("Hydrogen", "1", "13.99", "20.271", "Hydrogen is a chemical element with symbol H " +
+                "and" + " atomic number 1", "images/hydrogen_placeholder_description_image.png");
         //TODO Use the get functions from the not yet created Element class to set all of the fields
 
     }
@@ -1044,19 +1087,72 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
 
     }
 
+
     @Override
-    public void dragEnter (MouseEvent event)
+    public void panScreenStarted(MouseEvent event)
+    {
+        corX = (int) event.getX();
+        corY = (int) event.getY();
+    }
+
+    @Override
+    public void panScreen(MouseEvent event)
+    {
+        if (currentZoomLevel != 0)
+        {
+            GridPane_periodicTable.setTranslateX(event.getSceneX() - corX);
+            GridPane_periodicTable.setTranslateY(event.getSceneY() - corY);
+        }
+    }
+
+    @Override
+    public void dragEnter(MouseEvent event)    //For effect that makes buttons larger when hovering above them
     {
         ImageView sourceButton = (ImageView) event.getSource();
-        sourceButton.setFitHeight(80);
-        sourceButton.setFitWidth(90);
+        switch (currentZoomLevel)
+        {
+            case 0:
+                sourceButton.setFitHeight(90);
+                sourceButton.setFitWidth(80);
+                sourceButton.toFront();
+                break;
+            case 1:
+                sourceButton.setFitHeight(135);
+                sourceButton.setFitWidth(120);
+                sourceButton.toFront();
+                break;
+            case 2:
+                sourceButton.setFitHeight(180);
+                sourceButton.setFitWidth(160);
+                sourceButton.toFront();
+                break;
+
+        }
+
     }
 
     public void dragExit(MouseEvent event)
     {
         ImageView sourceButton = (ImageView) event.getSource();
-        sourceButton.setFitHeight(70);
-        sourceButton.setFitWidth(60);
+        switch (currentZoomLevel)
+        {
+            case 0:
+                sourceButton.setFitHeight(70);
+                sourceButton.setFitWidth(60);
+                sourceButton.toFront();
+                break;
+            case 1:
+                sourceButton.setFitHeight(105);
+                sourceButton.setFitWidth(90);
+                sourceButton.toFront();
+                break;
+            case 2:
+                sourceButton.setFitHeight(140);
+                sourceButton.setFitWidth(120);
+                sourceButton.toFront();
+                break;
+
+        }
 
     }
 
@@ -1242,10 +1338,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         elementButtons[117] = button_oganesson;
 
 
-
     }
-
-
 
 
 }
