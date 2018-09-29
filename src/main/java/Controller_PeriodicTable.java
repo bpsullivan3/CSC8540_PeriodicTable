@@ -7,8 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckMenuItem;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -46,7 +45,12 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     private int corX = 0;
     private int corY = 0;
 
-
+    @FXML
+    TextArea TextArea_sliderPreciseNumber;
+    @FXML
+    Slider Slider_filterSlider;
+    @FXML
+    ChoiceBox <String> ChoiceBox_sliderChoice;
     @FXML
     private MenuItem zoom200;
     @FXML
@@ -1130,7 +1134,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         }
 
     }
-
+    @Override
     public void dragExit(MouseEvent event)
     {
         ImageView sourceButton = (ImageView) event.getSource();
@@ -1175,6 +1179,8 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         }
 
     }
+
+
 
 
     public void createInformationScreen(String name, String atomicNumber, String meltingPoint, String boilingPoint,
@@ -1337,6 +1343,11 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         elementButtons[116] = button_tennessine;
         elementButtons[117] = button_oganesson;
 
+        //Text Box will update with the value of the slider
+        Slider_filterSlider.valueProperty().addListener((observable, oldValue, newValue) ->
+        {
+            TextArea_sliderPreciseNumber.setText(Double.toString(newValue.intValue()));
+        });
 
     }
 
