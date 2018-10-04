@@ -14,6 +14,7 @@ import java.util.ResourceBundle;
 
 public class Controller_ElementInformationPanel implements Initializable
 {
+
     @FXML
     private TextField text_field_melting_point;
     @FXML

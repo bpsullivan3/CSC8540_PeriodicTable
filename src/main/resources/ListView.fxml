@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller_ListView">
+   <content>
+      <TableView fx:id="TableView_table" prefHeight="496.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="TableView_atomicNumberColumn" prefWidth="88.0" text="C1" />
+          <TableColumn fx:id="TableView_nameColumn" minWidth="3.0" prefWidth="207.0" text="C2" />
+        </columns>
+      </TableView>
+   </content>
+</ScrollPane>

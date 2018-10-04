@@ -1,21 +1,21 @@
 package main.java;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -33,12 +33,38 @@ import java.util.ResourceBundle;
 public class Controller_PeriodicTable implements ButtonActions, Initializable
 {
     public ImageView[] elementButtons = new ImageView[118];
+
+    private int elementInformationPanelInstanceCount = 0;
+    private int currentZoomLevel = 0;
+    /*
+    0 = 100%
+    1 = 150%
+    2 = 200%
+     */
+    private Stage stage_elementInformationPanel;
+    private int corX = 0;
+    private int corY = 0;
+
     @FXML
-    private MenuItem exit_button;
+    TextArea TextArea_sliderPreciseNumber;
+    @FXML
+    Slider Slider_filterSlider;
+    @FXML
+    ChoiceBox <String> ChoiceBox_sliderChoice;
+    @FXML
+    private MenuItem zoom200;
+    @FXML
+    private GridPane GridPane_periodicTable;
     @FXML
     private AnchorPane root;
     @FXML
     private Pane pane;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom100;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom150;
+    @FXML
+    private CheckMenuItem CheckMenuItem_zoom200;
     @FXML
     public ImageView button_boron;
     @FXML
@@ -277,12 +303,81 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     public ImageView button_meitnerium;
 
 
+    @FXML
+    public void zoom100Action(ActionEvent event)
+    {
+        CheckMenuItem_zoom150.setSelected(false);
+        CheckMenuItem_zoom200.setSelected(false);
+        currentZoomLevel = 0;
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) 0);
+        root.setBottomAnchor(GridPane_periodicTable, (double) 0);
+        GridPane_periodicTable.setPrefWidth(1073);
+        GridPane_periodicTable.setPrefHeight(737);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
 
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(70);
+            elementButtons[i].setFitWidth(60);
+        }
+    }
 
     @FXML
-    void exitProgram(ActionEvent event)
+    public void zoom150Action(ActionEvent event)
     {
-        System.exit(0);
+        CheckMenuItem_zoom100.setSelected(false);
+        CheckMenuItem_zoom200.setSelected(false);
+        currentZoomLevel = 1;
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) -536);
+        root.setBottomAnchor(GridPane_periodicTable, (double) -368);
+        GridPane_periodicTable.setPrefWidth(1609);
+        GridPane_periodicTable.setPrefHeight(1105);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
+
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(105);
+            elementButtons[i].setFitWidth(90);
+        }
+    }
+
+    @FXML
+    public void zoom200Action(ActionEvent event)
+    {
+        CheckMenuItem_zoom100.setSelected(false);
+        CheckMenuItem_zoom150.setSelected(false);
+        currentZoomLevel = 2;
+        root.setTopAnchor(GridPane_periodicTable, (double) 0);
+        root.setLeftAnchor(GridPane_periodicTable, (double) 0);
+        root.setRightAnchor(GridPane_periodicTable, (double) -1073);
+        root.setBottomAnchor(GridPane_periodicTable, (double) -737);
+        GridPane_periodicTable.setPrefWidth(2146);
+        GridPane_periodicTable.setPrefHeight(1474);
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
+
+        for (int i = 0; i < 118; i++)
+        {
+            elementButtons[i].setFitHeight(140);
+            elementButtons[i].setFitWidth(120);
+        }
+
+
+    }
+
+    @FXML
+    public void centerScreenAction (ActionEvent event)
+    {
+        GridPane_periodicTable.setTranslateX(0);
+        GridPane_periodicTable.setTranslateY(0);
     }
 
     @FXML
@@ -993,16 +1088,115 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         createInformationScreen("Lawrencium");
     }
 
+    @Override
+    public void panScreenStarted(MouseEvent event)
+    {
+        corX = (int) event.getX();
+        corY = (int) event.getY();
+    }
+
+    @Override
+    public void panScreen(MouseEvent event)
+    {
+        if (currentZoomLevel != 0)
+        {
+            GridPane_periodicTable.setTranslateX(event.getSceneX() - corX);
+            GridPane_periodicTable.setTranslateY(event.getSceneY() - corY);
+        }
+    }
+
+    @Override
+    public void dragEnter(MouseEvent event)    //For effect that makes buttons larger when hovering above them
+    {
+        ImageView sourceButton = (ImageView) event.getSource();
+        switch (currentZoomLevel)
+        {
+            case 0:
+                sourceButton.setFitHeight(90);
+                sourceButton.setFitWidth(80);
+                sourceButton.toFront();
+                break;
+            case 1:
+                sourceButton.setFitHeight(135);
+                sourceButton.setFitWidth(120);
+                sourceButton.toFront();
+                break;
+            case 2:
+                sourceButton.setFitHeight(180);
+                sourceButton.setFitWidth(160);
+                sourceButton.toFront();
+                break;
+
+        }
+
+    }
+    @Override
+    public void dragExit(MouseEvent event)
+    {
+        ImageView sourceButton = (ImageView) event.getSource();
+        switch (currentZoomLevel)
+        {
+            case 0:
+                sourceButton.setFitHeight(70);
+                sourceButton.setFitWidth(60);
+                sourceButton.toFront();
+                break;
+            case 1:
+                sourceButton.setFitHeight(105);
+                sourceButton.setFitWidth(90);
+                sourceButton.toFront();
+                break;
+            case 2:
+                sourceButton.setFitHeight(140);
+                sourceButton.setFitWidth(120);
+                sourceButton.toFront();
+                break;
+
+        }
+
+    }
+
+
+    @Override
+    public void switchToListView(ActionEvent event)
+    {
+        try
+        {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ListView.fxml"));
+            Parent root_listView = fxmlLoader.load();
+            Stage stage_listView = new Stage();
+            Controller_ListView controller_listView = fxmlLoader.getController();
+            stage_listView.setScene(new Scene(root_listView));
+            stage_listView.show();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
 
     public void createInformationScreen(String name)
     {
         Element element = new Element(name);
         try
         {
+            elementInformationPanelInstanceCount += 1;
+
+            if (elementInformationPanelInstanceCount > 1)
+            {
+                stage_elementInformationPanel.close();
+            }
+
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ElementInformationPanel.fxml"));
             Parent root_elementInformationPanel = fxmlLoader.load();
-            Stage stage_elementInformationPanel = new Stage();
-            Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController(); //This is essential for changing values in other controller
+            stage_elementInformationPanel = new Stage();
+            Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController();
+            //This is essential for changing values in other controller
 
             //Insert element information panel values here//
             controller_elementInformationPanel.setName(element.getName());
@@ -1012,9 +1206,9 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
             controller_elementInformationPanel.setDescription(element.getDesc());
             controller_elementInformationPanel.setImage(element.getImage_Link());
 
-
             stage_elementInformationPanel.setScene(new Scene(root_elementInformationPanel));
             stage_elementInformationPanel.show();
+
         }
         catch (Exception e)
         {
@@ -1025,6 +1219,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+
         elementButtons[0] = button_hydrogen;
         elementButtons[1] = button_helium;
         elementButtons[2] = button_lithium;
@@ -1144,9 +1339,13 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         elementButtons[116] = button_tennessine;
         elementButtons[117] = button_oganesson;
 
+        //Text Box will update with the value of the slider
+        Slider_filterSlider.valueProperty().addListener((observable, oldValue, newValue) ->
+        {
+            TextArea_sliderPreciseNumber.setText(Double.toString(newValue.intValue()));
+        });
 
     }
-
 
 
 }
