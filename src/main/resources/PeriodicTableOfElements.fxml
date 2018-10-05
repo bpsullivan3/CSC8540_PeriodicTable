@@ -44,7 +44,7 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -1001,14 +1001,14 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <Label alignment="TOP_CENTER" prefHeight="90.0" prefWidth="344.0" text="Periodic Table of Elements" GridPane.columnIndex="5" GridPane.columnSpan="10" GridPane.rowIndex="2">
+            <Label alignment="CENTER" maxHeight="30.0" prefHeight="90.0" prefWidth="344.0" text="Periodic Table of Elements" GridPane.columnIndex="5" GridPane.columnSpan="10" GridPane.rowIndex="2" GridPane.rowSpan="2">
                <font>
-                  <Font name="Gloucester MT Extra Condensed" size="44.0" />
+                  <Font name="Times New Roman Bold" size="29.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="ChoiceBox_sliderChoice" prefWidth="150.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="ChoiceBox_sliderChoice" prefHeight="39.0" prefWidth="152.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
             <Slider fx:id="Slider_filterSlider" majorTickUnit="1000.0" max="6000.0" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="1" />
-            <TextArea fx:id="TextArea_sliderPreciseNumber" prefHeight="64.0" prefWidth="99.0" GridPane.columnIndex="10" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <TextArea fx:id="TextArea_sliderPreciseNumber" cacheShape="false" centerShape="false" prefHeight="64.0" prefWidth="99.0" scaleShape="false" style="-fx-background-color: transparent;" GridPane.columnIndex="10" GridPane.columnSpan="2" GridPane.rowIndex="1">
                <font>
                   <Font name="Times New Roman" size="25.0" />
                </font>

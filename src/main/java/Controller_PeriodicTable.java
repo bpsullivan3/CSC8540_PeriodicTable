@@ -1,5 +1,9 @@
 package main.java;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +19,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 //TODO When the Element class is made, implement ElementButtonActions
@@ -1344,6 +1350,14 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         {
             TextArea_sliderPreciseNumber.setText(Double.toString(newValue.intValue()));
         });
+
+        ObservableList<String> sliderChoiceList = FXCollections.observableArrayList();
+        sliderChoiceList.add("Atomic Number");
+        sliderChoiceList.add("Boiling Point");
+        sliderChoiceList.add("Melting Point");
+        ChoiceBox_sliderChoice.setItems(sliderChoiceList);
+        ChoiceBox_sliderChoice.setValue(sliderChoiceList.get(0));
+
 
     }
 
