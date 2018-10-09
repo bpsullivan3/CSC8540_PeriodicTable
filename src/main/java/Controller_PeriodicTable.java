@@ -1,14 +1,11 @@
 package main.java;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -19,10 +16,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 //TODO When the Element class is made, implement ElementButtonActions
@@ -56,7 +51,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     @FXML
     Slider Slider_filterSlider;
     @FXML
-    ChoiceBox <String> ChoiceBox_sliderChoice;
+    ChoiceBox<String> ChoiceBox_sliderChoice;
     @FXML
     private MenuItem zoom200;
     @FXML
@@ -380,7 +375,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
     @FXML
-    public void centerScreenAction (ActionEvent event)
+    public void centerScreenAction(ActionEvent event)
     {
         GridPane_periodicTable.setTranslateX(0);
         GridPane_periodicTable.setTranslateY(0);
@@ -1136,6 +1131,7 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
         }
 
     }
+
     @Override
     public void dragExit(MouseEvent event)
     {
@@ -1183,8 +1179,6 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
     }
 
 
-
-
     public void createInformationScreen(String name)
     {
         Element element = new Element(name);
@@ -1204,13 +1198,27 @@ public class Controller_PeriodicTable implements ButtonActions, Initializable
             Controller_ElementInformationPanel controller_elementInformationPanel = fxmlLoader.getController();
             //This is essential for changing values in other controller
 
-            //Insert element information panel values here//
+            //For demo purposes
+            controller_elementInformationPanel.setName("Hydrogen");
+            controller_elementInformationPanel.setAtomicNumber("1");
+            controller_elementInformationPanel.setMeltingPoint("13.99K");
+            controller_elementInformationPanel.setBoilingPoint("20.271K");
+            controller_elementInformationPanel.setImage("images/hydrogen_placeholder_description_image.png");
+            controller_elementInformationPanel.setDescription("Hydrogen is a chemical element with symbol H and " +
+                    "atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element on the" +
+                    " periodic table. Its monatomic form (H) is the most abundant chemical substance in the Universe," +
+                    " constituting roughly 75% of all baryonic mass. Non-remnant stars are mainly composed of " +
+                    "hydrogen in the plasma state. The most common isotope of hydrogen, termed protium (name rarely " +
+                    "used, symbol 1H), has one proton and no neutrons.");
+
+            /*
             controller_elementInformationPanel.setName(element.getName());
             controller_elementInformationPanel.setAtomicNumber(String.valueOf(element.getAt_num()));
             controller_elementInformationPanel.setMeltingPoint(String.valueOf(element.getMelting_pt()));
             controller_elementInformationPanel.setBoilingPoint(String.valueOf(element.getBoiling_pt()));
             controller_elementInformationPanel.setDescription(element.getDesc());
             controller_elementInformationPanel.setImage(element.getImage_Link());
+            */
 
             stage_elementInformationPanel.setScene(new Scene(root_elementInformationPanel));
             stage_elementInformationPanel.show();
