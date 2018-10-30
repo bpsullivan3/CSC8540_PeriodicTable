@@ -18,7 +18,7 @@ public class Element {
     public Element(String key){
 
         String url = "/resources/Elementdata.csv";
-        
+
       /*  String user = "csc8540";
         String password = "chem";
 
