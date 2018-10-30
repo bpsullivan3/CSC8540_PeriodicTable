@@ -17,8 +17,9 @@ public class Element {
 
     public Element(String key){
 
-        String url = "jdbc:mysql://localhost:3306/csc8540";
-        String user = "csc8540";
+        String url = "/resources/Elementdata.csv";
+        
+      /*  String user = "csc8540";
         String password = "chem";
 
         try {
@@ -37,7 +38,7 @@ public class Element {
 
         } catch (SQLException ex) {
             System.out.println(ex);
-        }
+        } */
 
     }
 
