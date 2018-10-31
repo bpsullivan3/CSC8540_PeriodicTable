@@ -1,16 +1,16 @@
 At_Num,Abbrev,Name,At_Weight,Melting_Pt,Boiling_Pt,Desc
-1,H,hydrogen,1.008,-259.1,-252.9,
-2,He,helium,4.003,-272.2,-268.9,
-3,Li,lithium,6.968,180.5,1342,
-4,Be,beryllium,9.012,1278,2970,
-5,B,boron,10.81,2079,2550,
-6,C,carbon,12.01,3367,4827,
-7,N,nitrogen,14.01,-209.9,-195.8,
-8,O,oxygen,16,-218.4,-183,
-9,F,fluorine,19,-219.8,-188.1,
-10,Ne,neon,20.18,-248,-248.7,
-11,Na,sodium,22.99,97.8,883,
-12,Mg,magnesium,24.31,649,1090,
+1,H,hydrogen,1.008,-259.1,-252.9,"The lightest element of the periodic table, Hydrogen is the most abundant chemical substance in the Universe"
+2,He,helium,4.003,-272.2,-268.9,"Helium is a colorless, odorless, tasteless non-toxic gas. The first of the noble gases, Helium has the lowest boiling point of all the elements"
+3,Li,lithium,6.968,180.5,1342,"A highly flammable and reactive element, lithium is the lightest solid element in the table."
+4,Be,beryllium,9.012,1278,2970,"Beryllium is one of the rarest elements in the Universe. It is a gray, brittle alkaline metal."
+5,B,boron,10.81,2079,2550,"Boron is  very low in abundance in the Universe, as it is only created as result of cosmic rays and supernoave."
+6,C,carbon,12.01,3367,4827,"A highly flammable and reactive element, lithium is the lightest solid element in the table."
+7,N,nitrogen,14.01,-209.9,-195.8,"A common element of life on Earth, carbon is nonmetallic and has the unique ability to form different organic compounds, such as graphite as diamonds"
+8,O,oxygen,16,-218.4,-183,"A member of the chalcogen group of the periodic table, oxygen is a highlyreactive nonmetal that is the 3rd most abundant element in the Universe."
+9,F,fluorine,19,-219.8,-188.1,"The lightest of the halogens, fluorine is a higly toxic gas, and is used commerically in electric insulators and refrigerants"
+10,Ne,neon,20.18,-248,-248.7,"Under standard conditions, neon is a colorless, odorless, and inert gas. A rare gas, it was disovered to be one of three residual elements left in dry air after removing nitrogen, oxygen, argon, and  carbon dioxide"
+11,Na,sodium,22.99,97.8,883,"Sodium is a soft, white, highly reactive metal that is present is various numerals, such as feldspars and rock salts. Sodium compounds are widely used, such as sodium chloride (table salt)."
+12,Mg,magnesium,24.31,649,1090,"A siny, gray metal, magnesium is produced in older stars as well as exploding supernovae. It is the fourth most common element in the Earth, compsoing a significant portion of the planet's mantle"
 13,Al,aluminum,26.98,660,2467,
 14,Si,silicon,28.09,1410,2355,
 15,P,phosphorus,30.97,44.1,280,
